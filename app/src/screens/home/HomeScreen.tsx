@@ -1,11 +1,13 @@
-import {ScrollView, View} from "react-native";
+import {ScrollView, View, Text} from "react-native";
 
 export const HomeScreen = () => {
   return (
     <View>
       <ScrollView>
-        TEST
+        <Text>
+        TEST TEST
+        </Text>
       </ScrollView>
     </View>
   )
-}
+} 
