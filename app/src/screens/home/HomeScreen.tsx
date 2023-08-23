@@ -5,7 +5,7 @@ export const HomeScreen = () => {
     <View>
       <ScrollView>
         <Text>
-        TEST TEST
+          TEST TEST TEST
         </Text>
       </ScrollView>
     </View>
