@@ -1,9 +1,15 @@
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {NavigationContainer} from "@react-navigation/native";
-import {RootStackParamList} from "@src/types/router";
-import {HomeScreen} from "@src/screens/home/HomeScreen";
+import {HomeScreen} from "@src/screens/HomeScreen";
 
-const Stack = createNativeStackNavigator<RootStackParamList>();
+type Router = {
+  Home: undefined;
+  Stack: { type: string };
+  Profile: { userId: string };
+  Feed: { sort: 'latest' | 'top' } | undefined;
+}
+
+const Stack = createNativeStackNavigator<Router>();
 
 export function Router() {
   return (
